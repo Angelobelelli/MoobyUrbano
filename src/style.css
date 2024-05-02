@@ -1,0 +1,842 @@
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,800&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    
+   
+}
+
+header {
+    background-color: #202020e6;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    align-items: center;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+.logo {
+    transform: scale(1);
+    transition: color 0.5s, transform 0.5s;
+}
+
+.logo img {
+    width: auto;
+    height: 60px;
+    display: flex;
+    border-radius: 20px;
+    margin-left: 38px;
+}
+
+.logo:hover {
+    color: #FCDB5A;
+    transform: scale(1.10);
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    transform: scale(1);
+    font-size: 10px;
+    transition: color 0.5s, transform 0.5s;
+}
+header ul li a  {
+    font-family: "Montserrat", sans-serif;
+
+    font-weight: normal;
+    font-size: 17px;
+    
+}
+.esquerda ul {
+    display: flex;
+    align-items:center ;
+}
+
+.esquerda ul li:hover {
+    text-decoration: underline;
+    color: #FCDB5A;
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+#container {
+    margin: 50px 0px ;
+    height: 100%;
+    display: flex;
+}
+
+#text {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#text h1 {
+    width: 60%;
+    font-family: "Nunito", sans-serif;
+    font-size: 31px;
+    margin-bottom: 20px;
+    text-align: left;
+    row-gap: 0px;
+}
+
+#text .sobre {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 21px;
+    color: #A6A6A6;
+    text-align: left;
+    width: 60%;
+}
+
+#img {
+    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img img {
+    width: 50%;
+  
+
+}
+
+.botoes a img{
+   margin-right: 20px;
+   margin-bottom: 10px;
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(1px 1px 3px #FFDE32);
+    transform: scale(1);
+    transition: color 0.5s, transform 0.5s;
+    
+
+}
+.botoes a img:hover{
+    box-shadow: 0px 0px 10px #FFDE32;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+.cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFDE32;
+    border: none;
+    color: black;
+    padding: 7px 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 250px;
+    height: auto;
+    transform: scale(1);
+    transition: color 0.5s, transform 0.5s;
+    
+    
+}
+.cadastro p{
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;
+}
+
+.mobile ul li   {
+    display: flex;
+    justify-content: right;
+   
+}
+
+
+.btn-abrir-menu span{
+    color: #FFDE32;
+    font-size: 40px;
+    display: none;
+}
+.menu-mobile{
+    height: 100vh;
+    background-color: #131313;
+    top: 0;
+    right: 0;
+    position: fixed ;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+}
+.menu-mobile.abrir-menu{
+    width: 70%;
+
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+.menu-mobile .btn-fechar span{
+    color: #FFDE32;
+    font-size: 40px;
+
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+.menu-mobile nav ul li a  {
+    padding: 20px 4%;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+.menu-mobile nav ul li a:hover  {
+    background-color: #FFDE32 ;
+    width: 99.1%;
+    text-align: right;
+    color: black;
+    border-radius: 20px;
+    
+}
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.71);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    display: none;
+}
+
+   
+button img {
+    display: inline-block;
+    align-items: center;
+    height: 40px;
+    margin: 0px 10px;
+}
+
+button p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 436px;
+}
+
+.botoes {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-top: 70px;
+}
+#downloadTop{
+    display: flex;
+    width: 60%;
+    justify-content: flex-start;
+    margin-top: 70px;
+}
+#download p {
+    color: black;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px #FFDE32;
+    transform: scale(1);
+}
+
+
+.download {
+    color: black;
+}
+
+#service {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#service h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    text-align: center;
+ 
+}
+
+#service b {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    color: #FFDE32;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.card {
+    width: 220px;
+    min-width: 230px;
+    height: 350px;
+    border: 3px solid #FFDE32;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+    transition: color 0.5s, transform 0.5s;
+    justify-content: center;
+}
+
+#service h1 {
+    text-align: center;
+}
+
+.card img {
+   
+    width: 120px;
+    height: auto;
+   margin: 5px 0px;
+    
+}
+
+#service .card h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+
+.card p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    color: #A6A6A6;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px #FFDE32;
+    transform: scale(1.05);
+}
+
+footer {
+    
+    box-shadow: 0px 0px 10px ;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 300px;
+    
+}
+footer p, ul li a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+footer h3 .underline{
+    color: #FFDE32 ;
+    background-color: #FFDE32;
+}
+
+footer h3{
+    color: #FFDE32;
+}
+footer *{
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 7%;
+    
+}
+
+.footer-col{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-col h2{
+    font-optical-sizing: 1.7em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p.email{
+    margin: 15px 0;
+   
+}
+
+p.phone{
+    font-size: 20px;
+    
+}
+.footer-col
+
+.footer-col .text-office{
+    margin-bottom: 20px;
+}
+.underline{
+    width: 100px;
+    height: 3px;
+    position: relative;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.underline span{
+    width: 7px;
+    height: 100%;
+    position: absolute;
+    left: 10px;
+    background-color: rgb(63,63,63);
+    border-radius: 3px;
+    animation: moving 1.5s linear infinite;
+}
+
+.funcionalidades{
+    visibility: hidden;
+}
+
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+.footer-col ul{
+    list-style-type: none;
+
+}
+
+.footer-col ul li{
+    margin: 10px 0px;
+}
+
+.footer-col form{
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.footer-col form input{
+    width: 70%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.footer-col form i{
+    font-size: 15px;
+}
+
+.footer-col .social-icons{
+    margin-top: 20px;
+}
+
+.footer-col .social-icons i{
+    padding-right: 20px;        
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 25px;
+}
+.footer-col .social-icons i:hover{
+    color: #FFDE32;
+    filter: drop-shadow(0px 0px 10px #FFDE32);
+}
+
+.footer-para{
+    max-width: 250px;
+}
+.menu {
+    display: none; /* Esconder o menu hambúrguer por padrão */
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+#cartaoFidelidade{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   margin-top: 200px;
+   height: 80vh;
+   
+}
+#cartaoFidelidade h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    display: inline-flex;
+    flex-direction: row;
+}
+#cartaoFidelidade p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.border{
+    
+    display: inline-flex;
+   flex-direction: column;
+   justify-content:center ;
+   align-items: center;
+   border: 3px solid #FFDE32;
+
+   padding: 70px;
+   border-radius: 40px;
+}
+.border strong{
+    font-family: "Montserrat", sans-serif;
+    font-size: 45px;
+    font-weight: 400 ;
+    padding: 0px 10px;
+    color: #FFDE32;
+}
+#motorista{
+margin-top: 200px;
+
+    
+}
+
+.imagemMotorista  {
+    display: flex;
+    align-items:center ;
+    text-align: center;
+    justify-content: center;
+
+} 
+.imagemMotorista img{
+    width: 300px;
+}
+   
+    
+.textoMotorista{
+    text-align: center;
+    margin-top: 50px;
+}
+.funcionalidades{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
+}
+.funcionalidades span{
+    color: #FFDE32;
+    font-size:100px;
+    margin-right: 20px;
+
+}
+.textoMotorista h4{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    margin-top: 40px;
+}
+.funcionalidades h2{
+    font-family: "Nunito", sans-serif;
+    font-size: 38px ;
+    color: #FFDE32;
+    
+}
+.funcionalidades p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight:  normal;
+    width: 50%;
+       
+}
+.textoMotorista h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px ;
+    font-weight: 400;
+    text-shadow: 0px 0px 50px yellow;
+    color: white;
+    
+    
+    
+}.textoMotorista .underline{
+    width: 75%;
+    height: 5px;
+    background-color: #FFDE32;
+    margin-bottom: 250px;
+    margin-top: 40px;
+  
+}
+.fa-pix:before{
+   color: #FFDE32;
+   font-size: 90px;
+}
+.formadePagamento{
+    display: inline-flex;
+}
+footer ul li a:hover{
+    color: #FFDE32;
+}
+
+@media screen and (max-width: 767px){
+
+
+
+        /* Mostrar o menu hambúrguer quando a largura da tela for menor ou igual a 767px */
+        .btn-abrir-menu span{
+            display: flex;
+        }
+
+        .menu {
+            display: block;
+            
+        }
+    
+       
+    
+        .menu.active {
+            display: block; /* Mostrar o menu quando o menu hambúrguer estiver ativado */
+        }
+    
+    header{
+       margin-top: 0px;
+       margin-bottom: 70px;
+      
+        
+    }
+    header .logo img{
+        margin: 0px;
+
+    }
+    body{
+        padding: 0px 1%;
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 5%;
+    }
+    #text{
+        height: 80vh;
+        width: 100%;
+        text-align: center;
+        padding: 0px 5%;
+
+    }
+    #text h1{
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+    }
+    #text .sobre {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .footer-col{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    
+    p.email {
+        padding: 0px 0px;
+    }
+    .footer-para{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .botoes{
+        flex-direction: column;
+        align-items: center;
+        width: 290px;
+        display: flex;
+        justify-content: center;
+        margin: 70px 0px;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 55px;
+        width: 240px;
+       
+
+        
+    }
+    .container button {
+        padding: 2px 7%;
+        text-align: center;
+        flex-direction: row;
+        display: flex;
+    }
+   
+    #img {
+        width: 100%;
+        text-align: center;    
+
+    }
+
+    #img img {
+        width: 50%; /* Permita que a largura seja ajustada automaticamente */
+        height: auto;
+        
+       
+    }
+    .botoes a img {
+        margin-right: 0px;
+      
+       
+    }
+   .cards{
+         display: flex;
+         justify-content: center;
+    }   
+    .esquerda .desktop{
+        display: none;
+    }
+    
+    
+    .close{
+        display: flex;
+    }
+    
+    
+    #container{
+        height: 100%;
+        margin: 150px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    
+    }
+    .esquerda ul {
+       display: inline;
+        align-items: center;
+    }
+    
+    .cadastro{
+         width: 100px;
+    } 
+    .underline{
+        text-align: center;
+        width: 100%;
+
+    }
+    .card {
+        height: 355px;
+    }
+    #service h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer-col .social-icons{
+        margin-top: 0px;
+    }
+
+    .footer-col{
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+    .funcionalidades{
+        padding: 0px 30px;
+        }
+        .imagemMotorista img{
+        border-radius: 0px;
+        width: 70%;
+        height: auto;
+        
+    }
+    .border{
+        padding: 40px 0px;
+        width: 90%;
+        
+    }
+    #cartaoFidelidade p{
+        width: 90%;
+        
+    }
+    
+    #cartaoFidelidade h1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 35px;
+        
+    }
+    #cartaoFidelidade strong{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        
+    }
+    
+    .funcionalidades p{
+        width: 100%;
+    }
+}  
