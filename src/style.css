@@ -77,9 +77,11 @@ header ul li a  {
 }
 
 #container {
-    margin: 50px 0px ;
-    height: 100%;
+    margin: 50px 0px;
+    height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #text {
