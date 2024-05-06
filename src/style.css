@@ -64,6 +64,18 @@ header ul li a  {
     font-size: 17px;
     
 }
+
+.banner {
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    z-index: -1;
+   
+}
+.banner img {
+    height: 90vh;
+    width: 100%;
+}
 .esquerda ul {
     display: flex;
     align-items:center ;
@@ -77,18 +89,19 @@ header ul li a  {
 }
 
 #container {
-    margin: 50px 0px ;
+ 
     height: 100%;
     display: flex;
 }
 
+
 #text {
-    width: 50%;
-    height: 90vh;
+    width: 60%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: space-evenly;
     text-align: center;
 }
 
@@ -102,49 +115,55 @@ header ul li a  {
 }
 
 #text .sobre {
-    font-family: "Montserrat", sans-serif;
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
     font-weight: normal;
-    font-size: 21px;
-    color: #A6A6A6;
+    font-size: 22px;
     text-align: left;
-    width: 60%;
+    width: 65%;
+    margin-left: 400px;
+    margin-top: 70px;
+
 }
 
 #img {
-    
-    width: 50%;
+    width: 70%;
+    height: 110vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
 }
 
 #img img {
-    width: 50%;
+    width: 925px;
+    height: 600px;
   
 
 }
-
-.botoes a img{
-   margin-right: 20px;
-   margin-bottom: 10px;
-    width: 200px;
-    height: auto;
-    filter: drop-shadow(1px 1px 3px #FFDE32);
-    transform: scale(1);
-    transition: color 0.5s, transform 0.5s;
-    
-
-}
-.botoes a img:hover{
-    box-shadow: 0px 0px 10px #FFDE32;
-    transform: scale(1.1);
-    border-radius: 10px;
-}
-.cadastro{
+.botaoDownload{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFDE32;
+    width: 140px;
+    height: 45px;
+    background-color: black;
+    margin-right: 30px;
+    border-radius: 10px;
+    color: white;
+}
+.botaoDownload p {
+    color: white;
+
+}
+.aa img{
+    width: 20px;
+    height: 20px;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8BC14;
     border: none;
     color: black;
     padding: 7px 100px;
@@ -157,8 +176,6 @@ header ul li a  {
     height: auto;
     transform: scale(1);
     transition: color 0.5s, transform 0.5s;
-    
-    
 }
 .cadastro p{
     color: black;
@@ -257,10 +274,11 @@ button p {
     margin-top: 70px;
 }
 #downloadTop{
-    display: flex;
+       display: flex;
     width: 60%;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-top: 70px;
+
 }
 #download p {
     color: black;
@@ -553,6 +571,7 @@ p.phone{
 }
 #motorista{
 margin-top: 200px;
+background-color: aliceblue;
 
     
 }
@@ -568,8 +587,12 @@ margin-top: 200px;
     width: 300px;
 }
    
-    
+.informacoesMotorista{
+    display: block;
+  
+}
 .textoMotorista{
+    display: flex;
     text-align: center;
     margin-top: 50px;
 }
@@ -578,6 +601,7 @@ margin-top: 200px;
     flex-direction: column;
     align-items: center;
     padding: 0px 100px;
+    width: 50%;
 }
 .funcionalidades span{
     color: #FFDE32;
@@ -589,6 +613,7 @@ margin-top: 200px;
     font-family: "Montserrat", sans-serif;
     font-size: 22px;
     margin-top: 40px;
+    color: black;
 }
 .funcionalidades h2{
     font-family: "Nunito", sans-serif;
@@ -601,24 +626,41 @@ margin-top: 200px;
     font-size: 20px;
     font-weight:  normal;
     width: 50%;
+    color: black;
        
 }
-.textoMotorista h1{
+#motorista h1{
     font-family: "Montserrat", sans-serif;
     font-size: 35px ;
     font-weight: 400;
     text-shadow: 0px 0px 50px yellow;
-    color: white;
-    
-    
-    
-}.textoMotorista .underline{
+    color: black;
+    text-align: center;
+ 
+}
+.text{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px ;
+    font-weight: 400;
+    text-shadow: 0px 0px 50px yellow;
+    color: black;
+    text-align: center;
+ 
+}
+
+.textoMotorista .underline {
     width: 75%;
     height: 5px;
     background-color: #FFDE32;
-    margin-bottom: 250px;
+    /* margin-bottom: 250px; */
     margin-top: 40px;
-  
 }
 .fa-pix:before{
    color: #FFDE32;
