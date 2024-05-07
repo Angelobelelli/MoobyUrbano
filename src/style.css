@@ -170,12 +170,13 @@ header ul  li {
 }
 
 .left{
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .right{
-    width: 60%;
+    width: 50%;
     text-align: center; 
 
 }
@@ -184,6 +185,7 @@ header ul  li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 70%;
 }
 main{
     width: 100%;
@@ -194,7 +196,7 @@ main{
     margin: 30px 30px;
 }
 .img img{
-    width: 250px;
+    width: 350px;
     
   
 }
