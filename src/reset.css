@@ -18,6 +18,8 @@
 /* Cor da barra de rolagem */
 ::-webkit-scrollbar-thumb {
     background-color: #FFDE32; /* Cor da barra de rolagem */
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 /* Cor do fundo da barra de rolagem */

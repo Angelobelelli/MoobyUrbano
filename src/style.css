@@ -287,6 +287,10 @@ main{
     transform: scale(1);
     transition: color 0.5s, transform 0.5s;
 }
+.botaoDownload a:hover{
+    box-shadow: 0px 0px 30px black;
+    transition: 0.5s;
+}
 .botaoDownload p {
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -309,8 +313,10 @@ main{
     width: 220px;
     height: auto;
     margin: 0px 20px;
+}
+.cadastro:hover{
     transform: scale(1);
-    transition: color 0.5s, transform 0.5s;
+    transition: 0.5s;
 }
 .cadastro p{
     color: black;
@@ -408,12 +414,10 @@ button p {
     justify-content: center;
     margin-top: 70px;
 }
-#downloadTop a{
+#downloadTop {
     display: flex;
     justify-content: center;
-  
 }
-
 
 #download p {
     color: black;
@@ -456,7 +460,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-        margin-top: 100px;
+    margin-top: 100px;
     gap: 20px;
 
 }
@@ -472,9 +476,12 @@ button:hover {
     text-align: left;
     display: flex;
     flex-direction: column;
-    transform: scale(1);
-    transition: color 0.5s, transform 0.5s;
     justify-content: center;
+}
+.card:hover{
+    transform: scale(1.10);
+    transition: 1.0s;
+    box-shadow: 0px 0px 30px #FFDE32;
 }
 
 #service h1 {
@@ -725,7 +732,11 @@ p.phone{
     transform: scale(1);
     transition: color 0.5s, transform 0.5s;
 }
-
+.containerMotorista .botaoDownload a:hover{
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow: 0px 0px 30px black;
+}
 .imagemMotorista  {
     display: flex;
     align-items:center ;
