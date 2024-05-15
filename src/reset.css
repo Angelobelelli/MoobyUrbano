@@ -17,10 +17,12 @@
 
 /* Cor da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background-color: #FFDE32; /* Cor da barra de rolagem */
+    background-color: #F8BC14; /* Cor da barra de rolagem */
+    border-radius: 10px;
+    border: 2px solid #1f1f1f;
 }
 
 /* Cor do fundo da barra de rolagem */
 ::-webkit-scrollbar-track {
-    background-color: #333; /* Cor do fundo da barra de rolagem */
+    background-color: #1f1f1f; /* Cor do fundo da barra de rolagem */
 }

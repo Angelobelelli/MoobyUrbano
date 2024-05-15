@@ -9,6 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body {
+    background-color: #141414;
     color: white;
     width: 100%;
     height: 100vh;
@@ -18,7 +19,7 @@ body {
 
 header {
     background-color: #202020e6;
-    height: 100px;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -54,14 +55,14 @@ header ul a {
     display: inline-block;
     margin: 0px 10px;
     transform: scale(1);
-    font-size: 10px;
+    font-size: 2px;
     transition: color 0.5s, transform 0.5s;
 }
 header ul a li  {
     font-family: "Montserrat", sans-serif;
 
     font-weight: normal;
-    font-size: 17px;
+    font-size: 16px;
     
 }
 header ul  li {
@@ -145,6 +146,8 @@ header ul  li {
     align-items: center;
     flex-direction: row;
     width: 100%;
+
+    background-color: aliceblue;
 }
 #img {
     width: 70%;
@@ -161,8 +164,8 @@ header ul  li {
 
 }
 #passageiro{
-    height: 100%;
-    padding: 50px 0px;
+    height: 120vh;
+    padding-top: 80px;
     background-color: #3E3E3E;
     display: flex;
     flex-direction: column;
@@ -213,9 +216,10 @@ main{
     width: 47%;
     margin: 0px 10px;
     text-align: center;
+    height: 230px;
 }
 .img img{
-    width: 350px;
+    width: 320px;
     
   
 }
@@ -224,7 +228,7 @@ main{
     flex-direction: column;
     width: 100%;
     text-align: center;
-    padding: 50px 0px;
+  padding-bottom: 50px;
 }
 .textPassageiro h1{
     font-family: "Montserrat", sans-serif;
@@ -320,7 +324,7 @@ main{
     width: 200px;
 }
 
-.mobile ul li   {
+.mobile ul a li   {
     display: flex;
     justify-content: right;
    
@@ -359,16 +363,20 @@ main{
 .menu-mobile .btn-fechar{
     padding: 20px 5%;
 }
+.mobile{
+    display: flex;
+    flex-direction: column;
+}
 .menu-mobile nav ul a li{
+    
     padding: 20px 4%;
     font-family: "Nunito", sans-serif;
-    font-size: 40px;
+    font-size: 20px;
 }
 .menu-mobile nav ul a li:hover  {
     background-color: #FFDE32 ;
-    width: 99.1%;
-    text-align: right;
-    color: black;
+    width: 140px;
+    color: white;
     border-radius: 20px;
     
 }
@@ -431,6 +439,7 @@ button:hover {
 
 #service {
     width: 100%;
+    height: 97vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -484,7 +493,7 @@ button:hover {
 .card img {
    
     width: 120px;
-    height: auto;
+ 
    margin: 5px 0px;
     
 }
@@ -507,89 +516,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-footer {
-    
-    box-shadow: 0px 0px 10px ;
-    position: static;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    margin-top: 300px;
-    
-}
-footer p, ul li a{
-    font-family: "Montserrat", sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    margin: 10px 0px;
-}
-footer h3 .underline{
-    color: #FFDE32 ;
-    background-color: #FFDE32;
-}
-
-footer h3{
-    color: #FFDE32;
-}
-footer *{
-    color: white;
-    font-family: "Nunito", sans-serif;
-    font-size: 14px;
-}
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 7%;
-    
-}
-
-.footer-col{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footer-col h2{
-    font-optical-sizing: 1.7em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-p.email{
-    margin: 15px 0;
-   
-}
-
-p.phone{
-    font-size: 20px;
-    
-}
-.footer-col
-
-.footer-col .text-office{
-    margin-bottom: 20px;
-}
-.underline{
-    width: 200px;
-    height: 3px;
-    position: relative;
-    background-color: #F8BC14;
-    margin: 20px 0px;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.underline span{
-    width: 7px;
-    height: 100%;
-    position: absolute;
-    left: 10px;
-    background-color: rgb(63,63,63);
-    border-radius: 3px;
-    animation: moving 1.5s linear infinite;
-}
 
 .funcionalidades{
     visibility: hidden;
@@ -606,52 +532,7 @@ p.phone{
     }
 }
 
-.footer-col ul{
-    list-style-type: none;
 
-}
-
-.footer-col ul li{
-    margin: 10px 0px;
-}
-
-.footer-col form{
-    margin-top: 20px;
-    border-bottom: 1px solid white;
-    padding-bottom: 10px;
-    display: flex;
-}
-
-.footer-col form input{
-    width: 70%;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding-left: 10px;
-}
-
-.footer-col form i{
-    font-size: 15px;
-}
-
-.footer-col .social-icons{
-    margin-top: 20px;
-}
-
-.footer-col .social-icons i{
-    padding-right: 20px;        
-    border-radius: 50%;
-    margin-right: 10px;
-    font-size: 25px;
-}
-.footer-col .social-icons i:hover{
-    color: #FFDE32;
-    filter: drop-shadow(0px 0px 10px #FFDE32);
-}
-
-.footer-para{
-    max-width: 250px;
-}
 .menu {
     display: none; /* Esconder o menu hambúrguer por padrão */
     cursor: pointer;
@@ -706,11 +587,11 @@ p.phone{
     color: #FFDE32;
 }
 #motorista{
-    background-color: white;
-    height: 100%;
+    height: 120vh;
     display: flex;
     flex-direction: column;
-    padding: 60px 0px;
+    padding-top: 10px;
+    background-color: aliceblue;
 
     
 }
@@ -734,7 +615,7 @@ p.phone{
 
 } 
 .imagemMotorista img{
-    width: 350px;
+    width: 320px;
 }
    
 .informacoesMotorista{
@@ -742,7 +623,7 @@ p.phone{
     flex-direction: column;
     width: 50%;
     align-items: center;
-    margin-top: 90px;
+   
 
   
 }
@@ -755,7 +636,7 @@ p.phone{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-
+    height: 230px;
     width: 50%;
 }
 .funcionalidades span{
@@ -838,9 +719,6 @@ article{
 .formadePagamento{
     display: inline-flex;
 }
-footer ul li a:hover{
-    color: #FFDE32;
-}
 
 .botaoDownloadPassageiro:hover{
     transform: scale(1.10);
@@ -848,6 +726,95 @@ footer ul li a:hover{
 .botaoDownload:hover{
     transform: scale(1.10);
 }
+
+
+footer{
+    background-color: rgba(56, 51, 51, 0.719);
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-direction: column;
+    
+}
+footer ul{
+    display: inline-flex;
+    list-style: none;
+    
+}
+footer ul li{
+    padding: 0px 50px;
+    font-weight: 200;
+    font-size: 18px;
+    
+}
+footer h1,a{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+
+.underline{
+    width: 65%;
+    height: 3px;
+    position: relative;
+    background-color: #F8BC14;
+    margin-top: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    
+}
+.geral{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#emailDireita{
+    font-family: "Montserrat", sans-serif;
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#emailDireita i{
+    margin: 0px 10px;
+    font-size: 25px;
+    color: #F8BC14;
+}
+#emailDireita p{
+    font-size: 17px;
+}
+.esquerda{
+    display: inline-flex
+}
+.esquerda > a > i {
+    color: white;
+    display: inline-flex;
+    border-radius: 6px;
+    margin: 0px 5px;
+    height: 36px;
+    width: 36px;
+    font-size: 30px;
+    transition: 0.5s;
+   
+    
+}
+.esquerda > a > i:hover{
+    color: #F8BC14;
+    transform: scale(1.10);
+    
+    
+}
+
 @media screen and (max-width: 767px){
 
 
@@ -882,7 +849,10 @@ footer ul li a:hover{
         padding: 0px 1%;
         width: 100%;
     }
-
+    .mobile ul a li {
+        color: white;
+        font-size: 2px
+    }
     .container{
         display: flex;
         flex-direction: column;
@@ -890,7 +860,7 @@ footer ul li a:hover{
         padding: 0px 5%;
     }
     #text{
-        height: 80vh;
+        height: 100vh;
         width: 100%;
         text-align: center;
         padding: 0px 5%;
@@ -906,32 +876,20 @@ footer ul li a:hover{
         font-size: 18px;
         text-align: center;
     }
-    .footer-col{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-
-    }
+    
     
     p.email {
         padding: 0px 0px;
     }
-    .footer-para{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        max-width: 100%;
-    }
+    
     .botoes{
         flex-direction: column;
         align-items: center;
-        width: 290px;
+        width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
-        margin: 70px 0px;
+        margin: 50px 0px;
     }
     .btn{
         display: flex;
@@ -950,15 +908,19 @@ footer ul li a:hover{
         flex-direction: row;
         display: flex;
     }
-   
+   #container{
+    display: flex;
+    flex-direction: column;
+   }
     #img {
-        width: 100%;
+        width: 100%; 
+        height: 80%;
         text-align: center;    
 
     }
 
     #img img {
-        width: 50%; /* Permita que a largura seja ajustada automaticamente */
+        width: 100%; /* Permita que a largura seja ajustada automaticamente */
         height: auto;
         
        
@@ -983,17 +945,17 @@ footer ul li a:hover{
     
     
     #container{
-        height: 100%;
-        margin: 150px 0px;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column-reverse;
     
     }
+    #text .sobre{
+        margin: 0px;
+    }
     .esquerda ul {
-       display: inline;
-        align-items: center;
+        display: inline-flex;
+        align-items: flex-end;
+        flex-direction: column;
     }
     
     .cadastro{
@@ -1004,21 +966,30 @@ footer ul li a:hover{
         width: 100%;
 
     }
-    .card {
-        height: 355px;
+    c{
+        font-size: 40px;
+    }
+    #service{
+        height: 100%;
+    }
+    #service .card h1 {
+        font-family: "Nunito", sans-serif;
+        font-size: 25px;
+        text-align: left;
+    }
+    .card{
+        height: 310px;
+    }
+    .card p  {
+        height: 305px;
+        font-size: 16px;
+       
     }
     #service h1 {
         text-align: center;
         margin-top: 20px;
     }
-    .footer-col .social-icons{
-        margin-top: 0px;
-    }
-
-    .footer-col{
-        flex-direction: column;
-        margin: 40px 0px;
-    }
+    
     .funcionalidades{
         padding: 0px 29px;
         }
@@ -1052,8 +1023,85 @@ footer ul li a:hover{
         font-size: 40px;
         
     }
-    
+    .areaCards{
+        width: 100% ;
+        display: flex;
+    }
     .funcionalidades p{
         width: 100%;
     }
+    #motorista{
+        height: 110%;
+    }
+    .containerMotorista{
+        display: flex;
+        flex-direction: column;
+    }
+    #passageiro{
+        height: 110%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .funcionalidades{
+        width: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left{
+        width: 100%;
+        display: flex;
+    }
+    .right{
+        width: 100%;
+    }
+    .img img{
+        width: 50%;
+    }
+    .areaCards{
+        display: flex;
+        justify-content: center;
+    }
+    .textPassageiro h1{
+        width: 100%;
+        text-align: center;
+    }
+    .passageiroCard{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .passageiroCard p, h1{
+    width: 90%;
+     
+
+    }
+    .textPassageiro{
+        width: 90%;
+        text-align: center;
+    }
+   
+    footer{
+     height: 250px;
+    }
+    footer h1{
+        width: 70%;
+        font-size: 14px
+    }
+    .geral{
+        flex-direction: column-reverse;
+    }
+
 }  
