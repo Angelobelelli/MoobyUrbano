@@ -19,3 +19,28 @@ sr.reveal('.textPassageiro',{ duration: 1000 });
 sr.reveal('.sobre',{ duration: 1000 });
 sr.reveal('#img',{ duration: 1000 });
 
+
+
+
+
+const header = document.getElementById('header');
+const headerClassList = header.classList;
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+  let scrollTop = window.scrollY;
+
+  if (scrollTop > lastScrollTop && scrollTop >= 200) {
+    // Scroll down
+    if (!headerClassList.contains('scrollHide')) {
+      headerClassList.add('scrollHide');
+    }
+  } else {
+    // Scroll up
+    if (headerClassList.contains('scrollHide')) {
+      headerClassList.remove('scrollHide');
+    }
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});

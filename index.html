@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logoNavegador.png">
+    <link rel="icon" href="img/logonavegador.svg">
+    
     <title>Mooby</title>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="index.js?v=2" defer> </script>
-    <link rel="stylesheet" href="src/style.css?v=19.92"> 
-    <link rel="stylesheet" href="src/reset.css?v=19.92">
-    <link rel="stylesheet" href="src/mediaQuery.css?v=19.92">
+    <link rel="stylesheet" href="src/style.css?v=20.99"> 
+    <link rel="stylesheet" href="src/reset.css?v=20.99">
+    <link rel="stylesheet" href="src/mediaQuery.css?v=20.99">
 
     
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -34,7 +35,7 @@
     </style>
 </head>
 <body>
-    <header id="cabecalho">
+    <header id="header">
         <div class="logo">
             <a href="javascript:void(0);" onclick="scrollToSection('container')"><img src="svg/logo.svg" alt=""></a>
         </div>
@@ -46,11 +47,7 @@
                     <a href="javascript:void(0);" onclick="scrollToSection('service')"><li>Serviços</li></a>
                     <a href="javascript:void(0);" onclick="scrollToSection('motorista')"><li>Motorista</li></a>
                     <a href="javascript:void(0);" onclick="scrollToSection('passageiro')"><li> Passageiro<li></a>
-                    <button  class="cadastro" class="btn">
-                        <a href="https://forms.gle/bjqkNJcg63MAcMteA" target="_blank">
-                        <p>Pré cadastro</p></a>
-                    </button>
-                   
+                    
                 </ul>
             </nav>
             <div class="btn-abrir-menu" id="btn-menu">
@@ -85,7 +82,7 @@
         <div class="banner"><img src="img/fundoPrimeiraTela.webp" alt=""></div>
         <div id="text">
            
-            <p class="sobre">Viaje com tranquilidade! Chegue onde quiser com conforto, segurança, agilidade e pagando pouco!</p>
+            <p class="sobre">Viaje com tranquilidade! Chegue onde quiser com conforto, segurança, agilidade e pagando pouco! <br>Instale seu APP e garanta sua primeira viagem com 10% de desconto!! </p>
 
             <div class="botoes" id="downloadTop">
                 
@@ -97,7 +94,8 @@
                 </div>
                 
                 <div class="botaoDownload">
-                    <a href="">
+                    <a href="https://play.google.com/store/apps/details?id=br.com.client.mooby"  target="_blank">
+
                         <img src="svg/icons8-google-play-store-novo.svg" alt="">
                         <p>Play Store</p>
                     </a>
@@ -147,17 +145,7 @@
             
         </div>
     </div>
-    <!-- <div id="cartaoFidelidade">
-        <div class="border">
-            <h1 >PROGRAMA <strong>FIDELIDADE</strong></h1>
-            <p>Bem vindo ao Programa Fidelidade Mooby! <br>
-                Acumule bônus a cada corrida.
-                <br>
-                A cada 10 corridas acumuladas ganhe uma corrida.
-                Para participar baixe nosso aplicativo e entre com seus dados.</p>
-        </div>
-    </div> -->
-   
+
     <section id="motorista">
         <div class="text">
             <h1>Motoristas</h1>
@@ -179,7 +167,7 @@
                     </div>
             
                     <div class="botaoDownload">
-                        <a href="">
+                        <a href="https://play.google.com/store/apps/details?id=br.com.driver.mooby" target="_blank">
                             <img src="svg/icons8-google-play-store-novo.svg" alt="">
                             <p>Play Store</p>
                         </a>
@@ -235,17 +223,15 @@
                         
                         </div>
                         <h2>Formas de Recebimento!</h2>
-                        <p>Com diversas opções de pagamento, o Mooby garante conveniência e flexibilidade para todos os usuários.</p>
+                        <p>Com diversas opções de pagamento, o Mooby garante conveniência e flexibilidade para todos os usuários'.'</p>
                     </div>
                     <div class="funcionalidades">
                         <div class="formadePagamento">
-                            <span class="material-symbols-outlined">
-                                    payments
-                            </span>
+                            <img src="svg/savings_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                         
                         </div> 
-                        <h2>Formas de Recebimento!</h2>
-                        <p>Com diversas opções de pagamento, o Mooby garante conveniência e flexibilidade para todos os usuários.</p>
+                        <h2>Receba Diariamente!</h2>
+                        <p>O Mooby oferece conveniência e rapidez para que você tenha acesso ao seu dinheiro diariamente, garantindo mais segurança e flexibilidade para nossos motoristas.</p>
                  
                     </div>
                                     
@@ -311,7 +297,7 @@
             </div>
                 <div class="right">
                     <div class="img">
-                        <img src="svg/printPassageiro.svg" alt=""></div>
+                        <img src="svg/image-removebg-preview (1).svg" alt=""></div>
                     <div class="botoes" id="downloadTop">
             
                         <div class="botaoDownloadPassageiro">
@@ -322,7 +308,7 @@
                         </div>
             
                         <div class="botaoDownloadPassageiro">
-                            <a href="">
+                            <a href="https://play.google.com/store/apps/details?id=br.com.client.mooby" target="_blank">
                                 <img src="svg/icons8-google-play-store-novo.svg" alt="">
                                 <p>Play Store</p>
                             </a>
@@ -360,8 +346,8 @@
         <h1>©2024 by Mooby. Proudly created with <a href="https://angelobelelli.blog" target="_blank">Angelo Belelli</a></h1>
         
     </footer>
-    <script src="index.js"></script>
-    <script src="scrollReaveal.js"></script>
+    <script src="index.js?v=20.97"></script>
+    <script src="scrollReaveal.js?v=20.97   "></script>
 
     <script>
         function scrollToSection(sectionId) {
@@ -369,5 +355,6 @@
             section.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
+    
 </body>
 </html>
