@@ -3,7 +3,7 @@ window.sr = ScrollReveal({ reset:true });
 
 
 
-sr.reveal('#service',{ duration: 1000 });
+
 sr.reveal('.card',{ duration: 1000 });
 sr.reveal('#cartaoFidelidade',{ duration: 1000 });
 sr.reveal('.funcionalidades',{ duration: 1000 });
